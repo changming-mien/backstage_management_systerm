@@ -1,7 +1,9 @@
 <template>
   <div class="index">
       <HeadNav/>
-      <LeftMenu></LeftMenu>
+      <keep-alive>
+        <LeftMenu></LeftMenu>
+      </keep-alive>
       <div class="rightContainer">
         <router-view></router-view>
       </div>
